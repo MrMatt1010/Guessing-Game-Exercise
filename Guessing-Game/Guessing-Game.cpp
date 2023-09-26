@@ -26,7 +26,11 @@ int main() {
 		else if (guess > randomNumber) {
 			std::cout << guess << " Sorry wrong guess, try again";
 		}
-		
+		chancesLeft--;
+		if (chancesLeft == 0) {
+			std::cout << "\nBetter luck next time";
+			std::cout << randomNumber << " Was the correct number";
+		}
 	}
-
+	return(0); 
 }
