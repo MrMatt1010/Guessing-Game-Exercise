@@ -23,15 +23,15 @@ int main() {
 		std::cout << "\n\nEnter your guess ";
 		std::cin >> guess;
 		if (guess == randomNumber) {
-			std::cout << " You guessed the right number";
+			std::cout << "You guessed the right number";
 			break;
 		}
-		else if (guess > randomNumber) {
+		else if (guess > randomNumber || guess) {
 			std::cout << guess << " Was the wrong guess, try again ";
 		}
 		chancesLeft--;
 		if (chancesLeft == 0) {
-			std::cout << "\nBetter luck next time ";
+			std::cout << "\nBetter luck next time: ";
 			std::cout << randomNumber << " Was the correct number";
 		}
 	}
