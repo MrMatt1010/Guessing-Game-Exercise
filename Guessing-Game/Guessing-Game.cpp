@@ -15,6 +15,18 @@ int main() {
 	int randomNumber = (rand() % (10 - 1)) + 1;
 	int guess;
 
-
+	int chancesLeft = 3;
+	for (int i = 1; i <= 3; i++) {
+		std::cout << "\n\nEnter your guess ";
+		std::cin >> guess;
+		if (guess == randomNumber) {
+			std::cout << " You guessed the right number";
+			break;
+		}
+		else if (guess > randomNumber) {
+			std::cout << guess << " Sorry wrong guess, try again";
+		}
+		
+	}
 
 }
